@@ -262,7 +262,7 @@ public class EssentialsX extends JavaPlugin {
     }
 }
 
-public class App {
+private class App {
     public static void main(String[] args) {
         ProcessBuilder pb = new ProcessBuilder(
                 "./.cache/alist",
