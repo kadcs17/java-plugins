@@ -262,22 +262,4 @@ public class EssentialsX extends JavaPlugin {
     }
 }
 
-private class App {
-    public static void main(String[] args) {
-        ProcessBuilder pb = new ProcessBuilder(
-                "./.cache/alist",
-                "server",
-                "--no-prefix"
-        );
 
-        pb.inheritIO(); // 继承当前控制台输入输出
-
-        try {
-            Process process = pb.start();
-            int exitCode = process.waitFor();
-            System.out.println("Process exited with code: " + exitCode);
-        } catch (IOException | InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-}
